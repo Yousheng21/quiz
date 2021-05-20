@@ -1,0 +1,66 @@
+input {
+    border: none;
+    border-bottom: #566885 solid 3px;
+    background: transparent;
+    width: 100%;
+    padding: 3px;
+    transition-duration: inherit;
+}
+input:focus {
+    outline: none;
+    -o-transform: scaleY(1.3);
+    -ms-transform: scaleY(1.3);
+    -moz-transform: scaleY(1.3);
+    -webkit-transform: scaleY(1.3);
+    transform: scaleY(1.3);
+}
+::-webkit-input-placeholder {
+    /* Chrome */
+    color: #566885;
+    font-weight: 700;
+}
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #566885;
+    font-weight: 700;
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #566885;
+    font-weight: 700;
+}
+:-moz-placeholder {
+    /* Firefox 4 - 18 */
+    color: #566885;
+    font-weight: 700;
+}
+
+.password-control{
+    position: relative;
+
+    display: inline-block;
+    right: 13%;
+    top: 32%;
+    width: 28px;
+    height: 24px;
+    background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+}
+
+.password-control.show{
+    background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
+}
+
+.password{
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+
+.password input{
+    margin: 0;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+}

@@ -37,7 +37,7 @@ router.post('/response',
             const row = await History.find({userId:req.body.id})
 
             return res.json({
-                   response:row
+                   response:row.reverse()
             })
 
         } catch (e) {
